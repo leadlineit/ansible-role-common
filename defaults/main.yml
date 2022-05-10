@@ -1,0 +1,15 @@
+---
+common_packages:
+  - iotop
+  - htop
+  - iftop
+  - screen
+  - mc
+  - curl
+  - bash-completion
+  - apt-transport-https
+  - ca-certificates
+  - gnupg2
+  - git
+  - pigz
+  - ncdu

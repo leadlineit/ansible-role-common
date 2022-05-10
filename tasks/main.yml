@@ -1,0 +1,6 @@
+---
+- import_tasks: install.yml
+  tags:
+    - install_common
+    - install
+    - common_packages

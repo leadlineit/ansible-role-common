@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  role_name: common
+  namespace: leadlineit
+  author: Stas Stavnichuk
+  description: Install common packages for Debian
+  license: BSD
+  min_ansible_version: 1.4
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+        - stretch
+  galaxy_tags:
+    - system
+    - debian
+    - common
+    - packages

@@ -1,0 +1,8 @@
+---
+- name: Update repo cache and install all common packages from list
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  with_items:
+    - "{{ common_packages }}"
