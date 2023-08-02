@@ -1,5 +1,6 @@
 ---
-- import_tasks: install.yml
+- name: Include ./install.yml
+  ansible.builtin.import_tasks: install.yml
   tags:
     - install_common
     - install

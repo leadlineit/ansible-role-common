@@ -1,14 +1,21 @@
-# Ansible Galaxy role for install common Debian packages.
+# Ansible Galaxy role for install common packages.
 
 ![Build Status](https://github.com/leadlineit/ansible-role-common/actions/workflows/ansible-galaxy-ci.yml/badge.svg)
 [![Galaxy Role](https://img.shields.io/badge/Ansible--Galaxy-leadlineit.common-blue.svg?logo=ansible&logoColor=white)](https://galaxy.ansible.com/leadlineit/common/)
 
-This role helps to install common packages to Debian (stretch/buster/bullseye).
+This role helps to install common packages.
+
+Supported OSes
+--------------
+- Debian 12 (bookworm)
+- Debian 11 (bullseye)
+- Debian 10 (buster)
+- Debian 9 (stretch)
 
 Requirements
 ------------
 
-This role requires Ansible 1.4 or higher.
+This role requires Ansible 2.11 or higher.
 
 Role Variables
 --------------
@@ -19,19 +26,19 @@ So, you can add any package you want to install, like this (for example):
 ```yaml
 ---
 common_packages:
-  - iotop
+  - apt-transport-https
+  - bash-completion
+  - ca-certificates
+  - curl
+  - git
+  - gnupg2
   - htop
   - iftop
-  - screen 
+  - iotop
   - mc
-  - curl
-  - bash-completion 
-  - apt-transport-https
-  - ca-certificates
-  - gnupg2
-  - git
-  - pigz
   - ncdu
+  - pigz
+  - screen
 ```
 
 Dependencies

@@ -1,15 +1,15 @@
 ---
 common_packages:
-  - iotop
+  - apt-transport-https
+  - bash-completion
+  - ca-certificates
+  - curl
+  - git
+  - gnupg2
   - htop
   - iftop
-  - screen
+  - iotop
   - mc
-  - curl
-  - bash-completion
-  - apt-transport-https
-  - ca-certificates
-  - gnupg2
-  - git
-  - pigz
   - ncdu
+  - pigz
+  - screen
